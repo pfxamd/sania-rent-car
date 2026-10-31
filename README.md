@@ -1,24 +1,23 @@
 # SANIA RENT CAR
 
-Modern car-rental website concept in Tétouan, Morocco. Designed and developed by [PFXAMD](https://pfxamd.com).
+A modern car-rental website concept based in Tétouan, Morocco. Designed and developed by [PFXAMD](https://pfxamd.com).
+
+**Live site:** https://pfxamd.github.io/sania-rent-car/
 
 ## Features
+- 12 cars with individual detail pages
+- Fleet filtering, up-to-three-car comparison
+- 4 UI languages: French, English, Spanish and Arabic with RTL
+- Price estimator and WhatsApp booking-request composer (no booking confirmations)
+- Responsive custom layout and flat-color car artwork placeholders
+- SEO metadata, sitemap and static pages
 
-- 12 vehicles with individual pages and color-block SVG placeholders
-- Fleet filters and three-car comparison
-- Four-language interface: French, English, Spanish, Arabic (RTL)
-- Booking request calculator with optional extras and WhatsApp message sharing
-- Responsive, keyboard-friendly, reduced-motion-aware interface
-- Static pages for GitHub Pages under the `/sania-rent-car/` base path
+## Publishing
+GitHub Pages is configured to publish **main / (root)**. The ready-to-serve static site lives at the repository root: `index.html`, `assets/`, the route folders and `.nojekyll`. Any push to `main` updates that live site through GitHub Pages.
+
+The mirrored `docs/` output is retained for source-build workflows; it is **not** the active publishing location.
 
 ## Development
+The Astro/TypeScript source lives in `src/`. Development scripts: `pnpm install`, `pnpm dev`, `pnpm build`. Keep the root static export synchronized with the updated site when publishing from `main / (root)`.
 
-Use `pnpm install` and `pnpm dev`. Build with `pnpm build` (Astro 7). The `docs/` directory also includes the initial, dependency-free prebuilt static deployment so GitHub Pages can publish directly from `main` → `/docs` without GitHub Actions.
-
-**Important:** The first build uses illustrative prices, specifications and flat placeholders. There is no backend, availability database, actual reservation confirmation, payment handling or real agency contact number. WhatsApp sharing prepares a request message, not a confirmed booking.
-
-## GitHub Pages
-
-Set **Settings → Pages → Deploy from a branch → main → /docs → Save**.
-
-Site: https://pfxamd.github.io/sania-rent-car/
+**Concept disclaimer:** prices, models, years, vehicle specifications, and services are illustrative. No real vehicle inventory, confirmed availability, real agency phone number, or payment processing is connected. Photos and brand asset production are deliberately deferred.
