@@ -29,3 +29,9 @@ body[dir=rtl] .about-hero-copy h1{letter-spacing:0}
 .about-story-copy h2{font-size:clamp(35px,10vw,57px)}
 .about-photo-exterior{box-shadow:7px 8px 0 #30332b}
 }
+
+/* Contact reception photography */
+.contact-office-photo{margin:0 0 16px;border:1px solid #d8d9d2;border-radius:12px;overflow:hidden;background:#e1ded5}
+.contact-office-photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.contact-map-place{height:190px}
+@media(max-width:760px){.contact-office-photo{margin-bottom:14px}.contact-map-place{height:185px}}
