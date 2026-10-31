@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+export function getStaticPaths() {
+  const cars = [["dacia-logan","Dacia Logan"],
+["renault-clio-5","Renault Clio 5"],
+["peugeot-208","Peugeot 208"],
+["hyundai-i20","Hyundai i20"],
+["volkswagen-golf-8","Volkswagen Golf 8"],
+["seat-leon","SEAT Leon"],
+["toyota-corolla","Toyota Corolla"],
+["dacia-duster","Dacia Duster"],
+["hyundai-tucson","Hyundai Tucson"],
+["peugeot-3008","Peugeot 3008"],
+["mercedes-c-class","Mercedes-Benz C-Class"],
+["bmw-3-series","BMW 3 Series"]];
+  return cars.map(([slug, name]) => ({ params: { slug }, props: { name } }));
+}
+const { slug } = Astro.params;
+const { name } = Astro.props;
+---
+<Base page="car" car={slug} title={name + ' | SANIA RENT CAR'} description={'Location de ' + name + ' à Tétouan. Tarifs indicatifs et demande de réservation.'} />

@@ -1,15 +1,24 @@
 # SANIA RENT CAR
 
-Car rental agency website concept for Tetouan, Morocco, designed and developed by PFXAMD.
+Modern car-rental website concept in Tétouan, Morocco. Designed and developed by [PFXAMD](https://pfxamd.com).
 
-Public site target: https://pfxamd.github.io/sania-rent-car/
+## Features
 
-## Deployment
+- 12 vehicles with individual pages and color-block SVG placeholders
+- Fleet filters and three-car comparison
+- Four-language interface: French, English, Spanish, Arabic (RTL)
+- Booking request calculator with optional extras and WhatsApp message sharing
+- Responsive, keyboard-friendly, reduced-motion-aware interface
+- Static pages for GitHub Pages under the `/sania-rent-car/` base path
 
-GitHub Pages source: `main` branch, `/docs` directory. No GitHub Actions required.
+## Development
 
-## Scope
+Use `pnpm install` and `pnpm dev`. Build with `pnpm build` (Astro 7). The `docs/` directory also includes the initial, dependency-free prebuilt static deployment so GitHub Pages can publish directly from `main` → `/docs` without GitHub Actions.
 
-12 vehicles, vehicle filters, comparisons, individual vehicle pages, live booking price calculations, WhatsApp booking request, and local information pages. Photographic assets are intentionally deferred; flat-color placeholders are used in the initial build.
+**Important:** The first build uses illustrative prices, specifications and flat placeholders. There is no backend, availability database, actual reservation confirmation, payment handling or real agency contact number. WhatsApp sharing prepares a request message, not a confirmed booking.
 
-All sample vehicles, prices, locations and company details are illustrative and must be confirmed before use by a real agency.
+## GitHub Pages
+
+Set **Settings → Pages → Deploy from a branch → main → /docs → Save**.
+
+Site: https://pfxamd.github.io/sania-rent-car/

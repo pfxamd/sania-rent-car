@@ -1,0 +1,23 @@
+---
+import '../styles/style.css';
+interface Props { page: string; car?: string; title: string; description: string; }
+const { page, car, title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#17191b" />
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical.toString()} />
+<link rel="icon" href="/sania-rent-car/favicon.svg" type="image/svg+xml" />
+<title>{title}</title>
+</head>
+<body data-page={page} data-car={car}>
+<div id="app"></div>
+<noscript><main><h1>SANIA RENT CAR</h1><p>Enable JavaScript to browse the fleet and prepare a booking request.</p></main></noscript>
+<script>import '../scripts/site.js';</script>
+</body>
+</html>
