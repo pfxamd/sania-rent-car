@@ -35,3 +35,15 @@ body[dir=rtl] .about-hero-copy h1{letter-spacing:0}
 .contact-office-photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
 .contact-map-place{height:190px}
 @media(max-width:760px){.contact-office-photo{margin-bottom:14px}.contact-map-place{height:185px}}
+
+/* Contact hero: office visible in the first viewport, not below the contact form. */
+.contact-hero{background:#191c1e;color:#fff;padding:62px 0 72px}
+.contact-hero-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:clamp(24px,4.5vw,72px)}
+.contact-hero-copy h1{font-size:clamp(44px,6.25vw,94px);line-height:.97;letter-spacing:-.06em;text-transform:uppercase;font-weight:900;margin:23px 0}
+.contact-hero-copy p{color:#c4c8c6;font-size:16px;max-width:500px}
+.contact-hero-photo{margin:0;border:1px solid #444a48;border-radius:10px;overflow:hidden;background:#333;min-width:0}
+.contact-hero-photo img{width:100%;height:auto;display:block;aspect-ratio:4/3;object-fit:cover}
+.contact-main-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:26px;align-items:start}
+body[dir=rtl] .contact-hero-copy h1{letter-spacing:0}
+@media(max-width:960px){.contact-hero-grid,.contact-main-grid{grid-template-columns:1fr}.contact-hero-copy h1{max-width:750px}.contact-hero{padding:50px 0 60px}}
+@media(max-width:760px){.contact-hero{padding:42px 0 50px}.contact-hero-grid{gap:25px}.contact-hero-copy h1{font-size:clamp(39px,11vw,72px)}.contact-hero-copy p{font-size:14px}.contact-main-grid{gap:16px}}
